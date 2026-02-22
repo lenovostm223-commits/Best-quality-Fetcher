@@ -282,7 +282,8 @@ class XboxPublicChecker:
                     # Extract recent achievements (simplified)
                     recent_ach = soup.find_all('div', {'class': 'recent-achievement'})[:5]
                     for ach in recent_ach:
-                        name = ach.find('a', {'class': 'achievement-title'})game = ach.find('div', {'class': 'game-title'})
+                        name = ach.find('a', {'class': 'achievement-title'})
+                        game = ach.find('div', {'class': 'game-title'})
                         date = ach.find('span', {'class': 'date'})
                         
                         if name and game:
