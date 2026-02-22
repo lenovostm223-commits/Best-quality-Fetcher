@@ -365,7 +365,8 @@ class XboxPublicChecker:
             return gamepass_status
             
         except Exception as e:
-            logger.error(f"Error checking Game Pass status: {e}")return gamepass_status
+            logger.error(f"Error checking Game Pass status: {e}")
+            return gamepass_status
             
     async def estimate_playtime(self, gamertag: str, gamerscore: int) -> Dict:
         """Estimate playtime based on gamerscore"""
