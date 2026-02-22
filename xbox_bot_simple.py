@@ -500,7 +500,8 @@ gamer123@hotmail.com:password123
 *Send exactly:*
 email:password
         """
-        await update.message.reply_text(format_text, parse_mode=ParseMode.MARKDOWN)async def check_credentials(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        await update.message.reply_text(format_text, parse_mode=ParseMode.MARKDOWN)
+        async def check_credentials(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Handle credential checking"""
         message = update.message.text.strip()
         
