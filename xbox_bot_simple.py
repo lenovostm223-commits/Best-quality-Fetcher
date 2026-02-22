@@ -478,7 +478,7 @@ Made for the Xbox community
         """
         await update.message.reply_text(about_text, parse_mode=ParseMode.MARKDOWN)
         
-        async def format_example(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+            async def format_example(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Handle /format command"""
         format_text = """
 📝 *Format Example*
