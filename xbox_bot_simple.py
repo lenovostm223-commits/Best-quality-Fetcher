@@ -372,7 +372,8 @@ class XboxPublicChecker:
             logger.error(f"Error checking Game Pass status: {e}")
             return gamepass_status
             
-    async def estimate_playtime(self, gamertag: str, gamerscore: int) -> Dict:"""Estimate playtime based on gamerscore"""
+        async def estimate_playtime(self, gamertag: str, gamerscore: int) -> Dict:
+        """Estimate playtime based on gamerscore"""
         # Average gamerscore per hour varies by game
         # Rough estimate: 20-50 gamerscore per hour for most players
         
@@ -404,6 +405,7 @@ class XboxPublicChecker:
                 "estimated_games": 0,
                 "last_played": "Never"
             }
+            
 
 class XboxBot:
     """Telegram bot for Xbox account checking"""
