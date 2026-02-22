@@ -707,7 +707,8 @@ def main():
     
     # Add handlers
     application.add_handler(CommandHandler("start", bot.start))
-    application.add_handler(CommandHandler("help", bot.help))application.add_handler(CommandHandler("about", bot.about))
+    application.add_handler(CommandHandler("help", bot.help))
+    application.add_handler(CommandHandler("about", bot.about))
     application.add_handler(CommandHandler("format", bot.format_example))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, bot.check_credentials))
     application.add_handler(CallbackQueryHandler(bot.button_callback))
