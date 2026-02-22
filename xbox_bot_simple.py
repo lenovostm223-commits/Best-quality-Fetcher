@@ -501,9 +501,11 @@ gamer123@hotmail.com:password123
 email:password
         """
         await update.message.reply_text(format_text, parse_mode=ParseMode.MARKDOWN)
-        async def check_credentials(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Handle credential checking"""
-        message = update.message.text.strip()
+        
+       async def check_credentials(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Handle credential checking"""  # <-- This line must be indented
+    message = update.message.text.strip()
+    # ... rest of the code indented as well
         
         # Validate format
         if ':' not in message:
